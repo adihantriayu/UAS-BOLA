@@ -9,7 +9,6 @@ public class Division {
 
     //Constructor
 
-
     public Division(String nameDivision, League league) {
         this.nameDivision = nameDivision;
         this.league = league;
@@ -41,46 +40,20 @@ public class Division {
         return daftarClub;
     }
     //2
-    public void getDaftarClubLeague (String findLeague){
-        if (findLeague==league.getNameLeague()) {
-           for (int b=0; b < league.daftarDivisi.size(); b++){
-               Division d = league.daftarDivisi.get(b);
-               System.out.println(d.getNameDivision());
-                    for (int c=0; c < daftarClub.size(); c++){
-                        System.out.println(d.daftarClub.get(c));
-                    }
-           }
-
-        }
-        else
-            System.out.println("No Club in this League");
-
+    public void getDaftarClubLeague (String League){
+        for (Club obj:daftarClub)
+            System.out.println(obj);
     }
+
     //3
-    public void getDaftarClubDivision(String findDivision)
+    public void getDaftarClubDivision(String Division)
     {
-        for (int b=0; b < league.daftarDivisi.size(); b++){
-           Division d =league.daftarDivisi.get(b);
-            if(findDivision == d.getNameDivision()){
-                for (int g=0; g < daftarClub.size(); g++ ) {
-                    System.out.println(d.daftarClub.get(g));
-                }
-            }
-        }
-
-
-        for (int b=0; b < league.daftarDivisi.size(); b++){
-            Division d = league.daftarDivisi.get(0);
-            Division e = league.daftarDivisi.get(1);
-                if (findDivision != d.getNameDivision()){
-                    if (findDivision != e.getNameDivision()) {
-                        System.out.println("No Club");
-                        break;
-                    }
-                }
-        }
+        for (Club obj:daftarClub)
+            System.out.println(obj);
     }
+
     //toString
+
     @Override
     public String toString() {
         return "Division{" +

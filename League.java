@@ -29,13 +29,10 @@ public class League {
     }
 
     public void getDaftarDivisi(String league) {
-        if (league == getNameLeague()) {
-            for (int a = 0; a < daftarDivisi.size(); a++) {
-                System.out.println(daftarDivisi.get(a));
-            }
-        } else
-            System.out.println("No Division");
+        for (Division obj:daftarDivisi)
+            System.out.println(obj);
     }
+
 
     @Override
     public String toString() {

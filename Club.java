@@ -37,8 +37,6 @@ public class Club {
                 }
         }
     }
-
-
     public void setDivision(Division division) {
         this.division = division;
     }

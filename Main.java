@@ -39,8 +39,10 @@ public class Main {
 
         //1 Get daftar divisi by nama liga
         System.out.println("1. Daftar nama divisi dengan nama Liga");
-        System.out.println("Daftar divisi Liga Inggris");
+        System.out.println("~~~Daftar divisi Liga Inggris~~~");
         inggris.getDaftarDivisi("Inggris");
+        System.out.println("~~~Daftar divisi Liga Italy~~~");
+        inggris.getDaftarDivisi("Italy");
         System.out.println();
 
         //2 Get Daftar Klub by nama liga
